@@ -1,6 +1,5 @@
-# Sistema Híbrido de Contagem de Pessoas (YOLOv11 + CSRNet)
-
-Projeto de pós-graduação que combina dois modelos de visão computacional para contar pessoas em qualquer tipo de cena. Em cenas esparsas (uma sala, uma rua, um evento pequeno), o YOLOv11 detecta cada pessoa individualmente e conta as caixas. Em multidões densas (estádios, shows, manifestações), o CSRNet estima um mapa de densidade e obtém a contagem pela integral desse mapa. Um roteador automático executa o YOLO primeiro e, com base na contagem e no tamanho médio das caixas detectadas, decide sozinho se a cena é densa o bastante para escalar para o CSRNet — sem o usuário precisar escolher o modelo manualmente.
+# Contagem de Pessoas
+Projeto de pós-graduação que combina de forma híbrida dois modelos de visão computacional para contar pessoas em qualquer tipo de cena. Em cenas esparsas (uma sala, uma rua, um evento pequeno), o YOLOv11 detecta cada pessoa individualmente e conta as caixas. Em multidões densas (estádios, shows, manifestações), o CSRNet estima um mapa de densidade e obtém a contagem pela integral desse mapa. Um roteador automático executa o YOLO primeiro e, com base na contagem e no tamanho médio das caixas detectadas, decide sozinho se a cena é densa o bastante para escalar para o CSRNet — sem o usuário precisar escolher o modelo manualmente.
 
 ## Como rodar
 
